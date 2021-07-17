@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import { Input } from '../components/Input/Input'
+import { NewsLetterForm } from "../components/NewsLetterForm/NewsLetterForm";
+
 export default function Home() {
   let name: string = "Сашо";
 
@@ -35,6 +38,8 @@ export default function Home() {
           <span>GitHub</span>
           <Image src="/github.png" alt="Github" width={64} height={64} />
         </a>
+
+        <NewsLetterForm />
       </main>
     </div>
   );
